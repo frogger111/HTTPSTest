@@ -30,8 +30,6 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         
         
-        NSLog(@"Is main thread %d", [NSThread isMainThread]);
-        
         NSString *zipFilePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"images.zip"];
         
         ZipFile *unzipFile= [[ZipFile alloc] initWithFileName:zipFilePath mode:ZipFileModeUnzip];
@@ -39,10 +37,9 @@
         FileInZipInfo *fileInfo = [unzipFile getCurrentFileInZipInfo];
         
         
-        ZipReadStream *read= [unzipFile readCurrentFileInZip];
+        ZipReadStream *read= [unzipFile readCurrentFileInZipWithPassword:@"1234567890"];
         NSMutableData *data= [[NSMutableData alloc] initWithLength:[fileInfo length]];
-        long long bytesRead = [read readDataWithBuffer:data];
-        
+        [read readDataWithBuffer:data];
         
         UIImage *imageData = [UIImage imageWithData:data];
         

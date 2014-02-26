@@ -32,7 +32,7 @@
 		B0630D4818BE140D00A9F754 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = B0630D4218BE140D00A9F754 /* ioapi.c */; };
 		B0630D4918BE140D00A9F754 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = B0630D4418BE140D00A9F754 /* unzip.c */; };
 		B0630D4A18BE140D00A9F754 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = B0630D4618BE140D00A9F754 /* zip.c */; };
-		B078077818BE200600F64A7B /* images.zip in Resources */ = {isa = PBXBuildFile; fileRef = B078077718BE200600F64A7B /* images.zip */; };
+		B078077C18BE286E00F64A7B /* images.zip in Resources */ = {isa = PBXBuildFile; fileRef = B078077B18BE286E00F64A7B /* images.zip */; };
 		B08E4C4618BDDC0800429EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08E4C4518BDDC0800429EF3 /* Foundation.framework */; };
 		B08E4C4818BDDC0800429EF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08E4C4718BDDC0800429EF3 /* CoreGraphics.framework */; };
 		B08E4C4A18BDDC0800429EF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08E4C4918BDDC0800429EF3 /* UIKit.framework */; };
@@ -110,7 +110,7 @@
 		B0630D4518BE140D00A9F754 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		B0630D4618BE140D00A9F754 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		B0630D4718BE140D00A9F754 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		B078077718BE200600F64A7B /* images.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = images.zip; sourceTree = "<group>"; };
+		B078077B18BE286E00F64A7B /* images.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = images.zip; sourceTree = "<group>"; };
 		B08E4C4218BDDC0800429EF3 /* HttpsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08E4C4518BDDC0800429EF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B08E4C4718BDDC0800429EF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -282,7 +282,7 @@
 		B08E4C4C18BDDC0800429EF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B078077718BE200600F64A7B /* images.zip */,
+				B078077B18BE286E00F64A7B /* images.zip */,
 				B08E4C4D18BDDC0800429EF3 /* HttpsTest-Info.plist */,
 				B08E4C4E18BDDC0800429EF3 /* InfoPlist.strings */,
 				B08E4C5118BDDC0800429EF3 /* main.m */,
@@ -388,7 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08E4C5C18BDDC0800429EF3 /* Main_iPad.storyboard in Resources */,
-				B078077818BE200600F64A7B /* images.zip in Resources */,
+				B078077C18BE286E00F64A7B /* images.zip in Resources */,
 				B08E4C6118BDDC0800429EF3 /* Images.xcassets in Resources */,
 				B08E4C5918BDDC0800429EF3 /* Main_iPhone.storyboard in Resources */,
 				B08E4C5018BDDC0800429EF3 /* InfoPlist.strings in Resources */,
