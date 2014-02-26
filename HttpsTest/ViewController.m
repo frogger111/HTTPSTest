@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecurityConnection.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+//    [[SecurityConnection manager] shareSomeDataByPOSTMethod:@"SomeAmazingString"];
+    [[SecurityConnection manager] base64Test];
+    
 }
 
 - (void)didReceiveMemoryWarning
