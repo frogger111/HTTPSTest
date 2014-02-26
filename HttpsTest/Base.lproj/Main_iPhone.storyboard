@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5037" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -15,11 +16,82 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tVX-OU-RyK">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-Se-nMs">
+                                <rect key="frame" x="160" y="0.0" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YfW-s9-gPe">
+                                <rect key="frame" x="0.0" y="284" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eVd-HS-ZOT">
+                                <rect key="frame" x="160" y="284" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-bm-ATK">
+                                <rect key="frame" x="70" y="132" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qUI-Fi-BDv">
+                                <rect key="frame" x="230" y="132" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="shs-FG-M0v">
+                                <rect key="frame" x="70" y="416" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-37-fW5">
+                                <rect key="frame" x="230" y="416" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="centerX" secondItem="shs-FG-M0v" secondAttribute="centerX" id="0b1-Bm-yBX"/>
+                            <constraint firstAttribute="bottom" secondItem="YfW-s9-gPe" secondAttribute="bottom" id="7uT-Ze-xJ4"/>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="centerY" secondItem="shs-FG-M0v" secondAttribute="centerY" id="8hX-8p-8nG"/>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="width" secondItem="eVd-HS-ZOT" secondAttribute="width" id="At4-NR-DaC"/>
+                            <constraint firstItem="DYg-Se-nMs" firstAttribute="leading" secondItem="tVX-OU-RyK" secondAttribute="trailing" id="Itb-wa-1B4"/>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="N6a-Ku-fZV"/>
+                            <constraint firstItem="DYg-Se-nMs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="PCT-dU-iB4"/>
+                            <constraint firstItem="tVX-OU-RyK" firstAttribute="centerY" secondItem="qUI-Fi-BDv" secondAttribute="centerY" id="PZN-qV-xRp"/>
+                            <constraint firstItem="qUI-Fi-BDv" firstAttribute="leading" secondItem="2MP-37-fW5" secondAttribute="leading" id="Pn2-gU-nrk"/>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="top" secondItem="tVX-OU-RyK" secondAttribute="bottom" id="TjE-x8-qZX"/>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="centerY" secondItem="2MP-37-fW5" secondAttribute="centerY" id="Zg0-11-fGL"/>
+                            <constraint firstItem="qUI-Fi-BDv" firstAttribute="centerX" secondItem="DYg-Se-nMs" secondAttribute="centerX" id="ais-3j-XqL"/>
+                            <constraint firstItem="tVX-OU-RyK" firstAttribute="centerX" secondItem="rkz-bm-ATK" secondAttribute="centerX" id="d30-B1-4kh"/>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="trailing" secondItem="tVX-OU-RyK" secondAttribute="trailing" id="e0J-Nb-TBn"/>
+                            <constraint firstItem="tVX-OU-RyK" firstAttribute="width" secondItem="DYg-Se-nMs" secondAttribute="width" id="eRB-Fx-lEl"/>
+                            <constraint firstItem="YfW-s9-gPe" firstAttribute="top" secondItem="eVd-HS-ZOT" secondAttribute="top" id="gBd-Uu-RIM"/>
+                            <constraint firstItem="tVX-OU-RyK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="gMd-JH-Apw"/>
+                            <constraint firstAttribute="trailing" secondItem="eVd-HS-ZOT" secondAttribute="trailing" id="hF5-oX-zxi"/>
+                            <constraint firstItem="eVd-HS-ZOT" firstAttribute="height" secondItem="DYg-Se-nMs" secondAttribute="height" id="hqR-Xz-7Nq"/>
+                            <constraint firstItem="tVX-OU-RyK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jP6-QG-zvR"/>
+                            <constraint firstAttribute="bottom" secondItem="eVd-HS-ZOT" secondAttribute="bottom" id="kG1-9c-3BB"/>
+                            <constraint firstAttribute="trailing" secondItem="DYg-Se-nMs" secondAttribute="trailing" id="tuU-Wf-wIl"/>
+                            <constraint firstItem="tVX-OU-RyK" firstAttribute="centerY" secondItem="rkz-bm-ATK" secondAttribute="centerY" id="uqL-wA-OVP"/>
+                            <constraint firstItem="tVX-OU-RyK" firstAttribute="height" secondItem="YfW-s9-gPe" secondAttribute="height" id="xR9-Eg-R5T"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView1" destination="tVX-OU-RyK" id="qMk-2Y-kmh"/>
+                        <outlet property="imageView2" destination="DYg-Se-nMs" id="6yX-rr-5jR"/>
+                        <outlet property="imageView3" destination="YfW-s9-gPe" id="d6f-6K-Nd9"/>
+                        <outlet property="imageView4" destination="eVd-HS-ZOT" id="SFV-Ul-A4j"/>
+                        <outlet property="progressView1" destination="rkz-bm-ATK" id="0hT-Fa-mGp"/>
+                        <outlet property="progressView2" destination="qUI-Fi-BDv" id="CkO-O1-6nY"/>
+                        <outlet property="progressView3" destination="shs-FG-M0v" id="e8H-oR-gkd"/>
+                        <outlet property="progressView4" destination="2MP-37-fW5" id="rqF-X8-kEg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="263" y="23"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

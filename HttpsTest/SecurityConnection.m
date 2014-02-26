@@ -36,30 +36,27 @@
         _af_manager = [AFHTTPRequestOperationManager manager];
 //        [_af_manager.requestSerializer setAuthorizationHeaderFieldWithUsername:@"" password:@""];
         _af_manager.securityPolicy.allowInvalidCertificates = YES;
+        _af_manager.responseSerializer = [AFHTTPResponseSerializer serializer];
         
     }
     
     return self;
 }
 
-
 -(void)shareSomeDataByPOSTMethod:(NSString *)someData{
 
     NSDictionary *dict = @{@"SomeData":someData};
-    
-    [_af_manager POST:@"https://muratordom-mapi.murator.pl/admin" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+    [_af_manager GET:@"https://www.google.pl/" parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
+        NSString *myString = [[NSString alloc] initWithData:responseObject encoding:NSASCIIStringEncoding];
         
-        NSLog(@"Success, Response %@", responseObject);
-        
+        NSLog(@"Success, Response %@", myString);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         NSLog(@"AFHTTPRequestOperation error has occured. Error: %@", error);
-        
     }];
-    
-    
 }
 
 -(void)base64Test {
